@@ -3,15 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wuzard's Odin Recipes</title>
+    <title>Wuzard's Recipe Book</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <ul>
-        <li><a href="./recipes/grilled-bananas.html">Grilled Bananas</a></li>
-        <li><a href="./recipes/grilled-salmon.html">Grilled Salmon</a></li>
-        <li><a href="./recipes/shoyu-chicken.html">Shoyu Chicken Ramen</a></li>
-        <li><a href="./recipes/spaghetti.html">Spaghetti &amp; Meatballs</a></li>
-    </ul>    
+    <!-- Header -->
+    <header class="arcane-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-anchor"><img src="images/wuzard_recipes_logo.svg" alt="wuzard's recipes logo"></a>
+            <nav class="page-nav">
+                <a href="#grimoire" class="nav-link active">Grimoire</a>
+                <a href="#elixirs" class="nav-link">Browse Elixirs</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <span class="badge">WUZARD'S RECIPE GRIMOIRE: SPELLBOOK #1</span>
+            <h2>APOTHECARY BREWING LOG</h2>
+            <p>Welcome, apprentice, to the Archmage's private culinary archives. Whitin these pages lie
+                carefully catalogued transmutations, volatile potions, and hearth-side rituals designed to
+                restore mana, enhance physical abilities, and bolster magic. Stir cauldrons with precaution,
+                a single misplaced pinch of stardust could become fatal!
+            </p>
+        </section>
+
+        <!-- Featured Recipe Section -->
+         <section class="featured-recipe">
+            <span class="featured-badge">ACTIVE CAULDRON SPECIAL</span>
+            <div class="featured-content">
+                <h3>Chrono-spatial Espresso</h3>
+                <p>A highly concentrated brew designed to briefly dilate time, granting the drinker an extra 10
+                    minutes of study focus per sip. Handle with extreme care; over-brewing may cause mild temporal
+                    displacements.
+                </p>
+                <a href="#" class="featured-btn">View Formula (500 Mana)</a>
+            </div>
+         </section>
+
+        <section class="recipes-section">
+            <ul class="recipes-list">
+                <li>
+                    <a href="./recipes/solar-singed-bananas.html" class="recipe-card">
+                        <span class="recipe-category">Hearth-Magic</span>
+                        <span class="recipe-name">Solar-Singed Phoenix Bananas</span>
+                        <span class="recipe-mana">120 mana</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./recipes/leviathan-sear-salmon.html" class="recipe-card">
+                        <span class="recipe-category">Transmutation</span>
+                        <span class="recipe-name">Leviathan Sear-Salmon</span>
+                        <span class="recipe-mana">340 mana</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./recipes/nebula-broth-ramen.html" class="recipe-card">
+                        <span class="recipe-category">Astral-Alchemy</span>
+                        <span class="recipe-name">Nebula-Broth Phoenix Ramen</span>
+                        <span class="recipe-mana">450 mana</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./recipes/basilisk-meatballs.html" class="recipe-card">
+                        <span class="recipe-category">Volatile-Cooking</span>
+                        <span class="recipe-name">Spaghetti &amp; Basilisk Meatballs</span>
+                        <span class="recipe-mana">280 mana</span>
+                    </a>
+                </li>
+            </ul> 
+        </section>
+
+    </main>
+
+    <footer class="grimoire-footer">
+        <p>&copy; 1024 Wuzard's Brews Co. Under jurisdiction of the Council of Archmages.</p>
+        <p class="warning">Warning: Prepare and consume volatile elixirs at your own risk.</p>
+        <p class="credits">Webpage crafted by Wuzard as part of <em>The Odin Project</em>'s curriculum.</p>
+    </footer>
 </body>
 </html>
